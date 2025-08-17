@@ -1,7 +1,23 @@
 /*general*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 
+
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 55px;
+}
 
 /*header*/
 .header {
@@ -11,10 +27,12 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding-top: 20px;
     padding-bottom: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .header div p {
-    font-size: 24px;
+    font-size: 50px;
     color: #d9832e;
     margin: 0;
 }
@@ -27,12 +45,17 @@
     padding: 0;
 }
 
+.header nav ul li {
+    display: inline-block;
+}
+
 .header nav ul li a {
     text-decoration: none;
     color: black;
     padding: 10px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .header nav ul li a:hover,
@@ -41,52 +64,18 @@
     color: white;
 }
 
-/* Hamburger personalizado */
-.navbar-toggler {
-    border: 2px solid #d9832e;
-    padding: 4px 8px;
-}
-
-
-
-
-
-
-/* Responsive - menú móvil */
+/* Responsive */
 @media (max-width: 991px) {
-    .navbar-nav {
-        gap: 0;
-        margin-top: 15px;
+    .header {
+        flex-direction: column;
+        text-align: center;
     }
     
-    .navbar-nav .nav-link {
-        margin-bottom: 5px;
-       
+    .header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
     }
-}
-
-body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-}
-
-h1 {
-    font-size: 55px; 
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.header div p {
-    font-size: 24px;
-    color: #d9832e;
-    margin: 0;
 }
 
 /*imagenes fondo hero*/
@@ -100,6 +89,8 @@ h1 {
     background-size: cover;
     background-position: center;
     margin-top: 30px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .hero > div {
@@ -123,15 +114,14 @@ h1 {
     margin-top: 100px;
 } 
 
-/* Mantiene tu grid personalizado pero añade responsive de Bootstrap */
 .propiedade-destacadas {
-    
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 30px;
+    max-width: 100%;
+   
 }
-
-
 
 .propiedad-destacada {
     background-color: #f8f9fa;
@@ -143,6 +133,8 @@ h1 {
     height: 100%;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .propiedad-destacada img {
@@ -229,7 +221,8 @@ h1 {
 .contenedor {
     margin: 0 auto;
     max-width: 1420px;
-    padding: 10px 10px;
+    padding: 10px 15px;
+    overflow-x: hidden;
 }
 
 /*imagenes de las propiedades orden*/
@@ -238,6 +231,8 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .propiedad {
@@ -247,6 +242,8 @@ h1 {
     box-shadow: 1px 10px 10px rgba(0,0,0,0.1);
     text-align: center;
     margin: 35px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .propiedad img {
@@ -283,6 +280,8 @@ h1 {
     grid-template-rows: auto auto;
     gap: 30px;
     align-items: start;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .footer-info {
@@ -376,6 +375,12 @@ h1 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .fotter {
@@ -391,7 +396,8 @@ h1 {
         grid-column: 1;
     }
 }
-/* Media queries para responsive con Bootstrap */
+
+/* Media queries para responsive */
 @media (max-width: 992px) {
     .propiedade-destacadas {
         grid-template-columns: repeat(2, 1fr);
