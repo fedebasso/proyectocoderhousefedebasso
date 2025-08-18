@@ -4,131 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>propiedades | Federico Basso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-    <header class="header contenedor">
-        <div>
-            <p>InmobiliariaFB</p>
-        </div>
-        <nav>
-            <div class="container-fluid">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="propiedades.html" class="active">Propiedades</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+    <header class="headercontenedor">
+        <div class="fs-1 color fw-bold">
+        <p>InmobiliariaFB</p>
+    </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid fs-6 fw-boldbtn btn-warning m-1">
+            <ul class="navbar-nav">
+                <li class="nav-item btn btn-warning m-1"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item btn btn-warning m-1"><a href="propiedades.html" class="nav-link active">Propiedades</a></li>
+                <li class="nav-item btn btn-warning m-1"><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li class="nav-item btn btn-warning m-1"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li class="nav-item btn btn-warning m-1"><a href="contacto.html" class="nav-link">Contacto</a></li>
             </ul>
-            </div>
         </nav>
     </header>
-    <main>
-       <div class="contenedor">
-        <h1> Nuestras Propiedades</h1>
-        <p>Explora nuestras propiedades destacadas.</p>
-        </div>
-        <div class="botonespropiedades"> 
-        <a href="#" class="botonprop ">todos</a>
-        <a href="#" class="botonprop ">casas</a>
- <a href="#" class="botonprop ">Apartamentos</a>
-     <a href="#" class="botonprop ">villas </a>
-     </div>
-        <div class="propiedades">
-        <div class="propiedad">
-            <img src="assets/img/casa1.png" alt="propiedad 1">
-            <h2>Casa en venta</h2>
-            <p>Descripción de la propiedad.</p>
-            <a href="#" class="botonvermas">Ver detalles</a>
-            <a href="#" class="telefono"> <i class="fas fa-phone"></i> </a>
-        </div>
-        <div class="propiedad">
-            <img src="assets/img/apartamento1.png" alt="propiedad 2">
-            <h2>Apartamento en alquiler</h2>
-            <p>Descripción de la propiedad.</p>
-            <a href="#" class="botonvermas">Ver detalles</a>
-            <a href="#" class="telefono"> <i class="fas fa-phone"></i> </a>
-        </div>
-        <div class="propiedad">
-            <img src="assets/img/villa 1.png" alt="propiedad 3">
-            <h2>Villa en venta</h2>
-            <p>Descripción de la propiedad.</p>
-            <a href="#" class="botonvermas">Ver detalles</a>
-            <a href="#" class="telefono"> <i class="fas fa-phone"></i> </a>
-        </div>
-            <div class="propiedad">
-                <img src="assets/img/casadecampo1.png" alt="propiedad 4">
-                <h2>Casa de campo</h2>
-                <p>Descripción de la propiedad.</p>
-                <a href="#" class="botonvermas"> Ver detalles</a>
-                <a href="#" class="telefono"> <i class="fas fa-phone"></i> </a>
+    
+    <main class="container-fluid">
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h1 class="display-4">Nuestras Propiedades</h1>
+                        <p class="lead">Explora nuestras propiedades destacadas.</p>
+                    </div>
+                </div>
+                
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center gap-2 flex-wrap">
+                            <a href="#" class="btn btn-outline-warning">Todos</a>
+                            <a href="#" class="btn btn-outline-warning">Casas</a>
+                            <a href="#" class="btn btn-outline-warning">Apartamentos</a>
+                            <a href="#" class="btn btn-outline-warning">Villas</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow">
+                            <img src="assets/img/casa1.png" class="card-img-top" alt="propiedad 1" style="height: 250px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Casa en venta</h5>
+                                <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn btn-outline-warning">Ver detalles</a>
+                                    <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow">
+                            <img src="assets/img/apartamento1.png" class="card-img-top" alt="propiedad 2" style="height: 250px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Apartamento en alquiler</h5>
+                                <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn btn-outline-warning">Ver detalles</a>
+                                    <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow">
+                            <img src="assets/img/villa 1.png" class="card-img-top" alt="propiedad 3" style="height: 250px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Villa en venta</h5>
+                                <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn btn-outline-warning">Ver detalles</a>
+                                    <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow">
+                            <img src="assets/img/casadecampo1.png" class="card-img-top" alt="propiedad 4" style="height: 250px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Casa de campo</h5>
+                                <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn btn-outline-warning">Ver detalles</a>
+                                    <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow">
+                            <img src="assets/img/apartamento2.png" class="card-img-top" alt="propiedad 5" style="height: 250px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Apartamento moderno</h5>
+                                <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn btn-outline-warning">Ver detalles</a>
+                                    <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow">
+                            <img src="assets/img/villa2.png" class="card-img-top" alt="propiedad 6" style="height: 250px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Villa de lujo</h5>
+                                <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <a href="#" class="btn btn-outline-warning">Ver detalles</a>
+                                    <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <p class="lead">¿No encontraste lo que buscas?</p>
+                        <a href="contacto.html" class="btn btn-warning btn-lg">Contactar agente</a>
+                    </div>
+                </div>
             </div>
-            <div class="propiedad">
-                <img src="assets/img/apartamento2.png" alt="propiedad 5">
-                <h2>Apartamento moderno</h2>
-                <p>Descripción de la propiedad.</p>
-                <a href="#" class="botonvermas">ver detalles</a>
-                <a href="#" class="telefono"> <i class="fas fa-phone"></i> </a>
-            </div>
-            <div class="propiedad">
-                <img src="assets/img/villa2.png" alt="propiedad 6">
-                <h2>Villa de lujo</h2>
-                <p>Descripción de la propiedad.</p>
-                <a href="#" class="botonvermas">Ver detalles</a>
-                <a href="#" class="telefono"> <i class="fas fa-phone"></i> </a>
-            </div>
-        </div>
-            <div class="parrafopreg">
-            <p>No encontraste lo que buscas?</p>
-            <a href="#" id="contactaragente" class="boton dark">Contactar agente</a>
-            </div>
-    </main> 
-    <footer>
-        <div class="fotter">
-            <div class="footer-info">
-                <h4>InmobiliariaFB</h4>
-                <p>Más de 15 años de experiencia ayudando a familias a encontrar su hogar ideal. Especialistas en compra, venta y alquiler de propiedades.</p>
+        </section>
+    </main>
+    
+    <footer class="bg-warning text-white py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-12">
+                    <h4 class="fw-bold">InmobiliariaFB</h4>
+                    <p>Más de 15 años de experiencia ayudando a familias a encontrar su hogar ideal. Especialistas en compra, venta y alquiler de propiedades.</p>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5>Contacto</h5>
+                    <p class="mb-1">Bv artigas 1234, Centro<br>Montevideo</p>
+                    <p class="mb-1">Tel: 123455</p>
+                    <p>info@inmobiliariaFB.com</p>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="servicios.html" class="text-white text-decoration-none">Venta de Propiedades</a></li>
+                        <li><a href="servicios.html" class="text-white text-decoration-none">Alquileres</a></li>
+                        <li><a href="servicios.html" class="text-white text-decoration-none">Tasaciones</a></li>
+                        <li><a href="servicios.html" class="text-white text-decoration-none">Asesoría Legal</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="nosotros.html" class="text-white text-decoration-none">Sobre Nosotros</a></li>
+                        <li><a href="propiedades.html" class="text-white text-decoration-none">Propiedades</a></li>
+                        <li><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
             
-            <div class="footer-contact">
-                <h4>Contacto</h4>
-                <p>Bv artigas 1234, Centro<br>Montevideo</p>
-                <p>Tel: 123455</p>
-                <p>info@inmobiliariaFB.com</p>
-            </div>
+            <hr class="my-4">
             
-            <div class="footer-services">
-                <h4>Servicios</h4>
-                <ul class="footer-links">
-                    <li><a href="servicios.html">Venta de Propiedades</a></li>
-                    <li><a href="servicios.html">Alquileres</a></li>
-                    <li><a href="servicios.html">Tasaciones</a></li>
-                    <li><a href="servicios.html">Asesoría Legal</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-links-section">
-                <h4>Enlaces</h4>
-                <ul class="footer-links">
-                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="propiedades.html">Propiedades</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            
-            <div class="social-media">
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <div class="social-media d-flex justify-content-center gap-3">
+                <a href="https://www.facebook.com" target="_blank" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.whatsapp.com" target="_blank" class="text-white fs-4"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
 
