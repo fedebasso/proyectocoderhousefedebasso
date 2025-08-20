@@ -2,6 +2,26 @@
     display: flex;
     justify-content: space-between;
 }
+.headercontenedor .navbar-brand {
+    font-size: 40px;
+    color: #333;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.headercontenedor .navbar-nav .nav-link {
+    color: #333;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
+   margin: 0 5px;
+ 
+}
+.headercontenedor .navbar-nav .nav-link:hover {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    
+}
 .fondoimagen {
     background-image: url('img/imagenfondo.png');
     background-size: cover;
@@ -12,8 +32,13 @@
     text-align: center;
 }
 .hero .container {
-    color: white;
-    padding: 100px 
+    padding: 50px;
+    font-size: 45px;
+    color:white;
+}
+.container  {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 .hero .nav-item {
     margin: 5px 10px;
