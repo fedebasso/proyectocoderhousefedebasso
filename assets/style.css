@@ -1,3 +1,4 @@
+/* header y navbar */
 .headercontenedor {
     display: flex;
     justify-content: space-between;
@@ -45,4 +46,47 @@
 }
 .hero nav-link:hover {
     color: #f0f0f0;
+}
+
+/* Estilos para las imágenes destacadas */
+.imagenes-destacadas .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  
+}
+
+/* Mejorar el aspecto de las cards */
+.imagenes-destacadas .card {
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.imagenes-destacadas .card:hover {
+    transform: translateY(-5px);
+}
+
+
+.imagenes-destacadas .card-body {
+    display: flex;
+    flex-direction: column;
+}
+/*servicios destacados*/
+.servicios-destacados .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    border: none;
+    
+}
+.servicios-destacados .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.equipo .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    border: none;
+}
+
+.equipo .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
