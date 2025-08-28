@@ -90,3 +90,27 @@
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
+
+/* Filtros de búsqueda con CSS Grid */
+.filtros-busqueda {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive para filtros */
+@media (max-width: 768px) {
+    .filtros-busqueda {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filtros-busqueda {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
