@@ -1,0 +1,13 @@
+
+// ARCHIVO PRINCIPAL 
+
+// LAYOUT
+@use 'components/layout/header';
+@use 'components/layout/footer';
+
+// SECCIONES
+@use 'components/sections/hero';
+@use 'components/sections/body';
+
+// UTILIDADES
+@use 'components/utils/responsive';

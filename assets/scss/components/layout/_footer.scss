@@ -1,0 +1,19 @@
+
+// FOOTER Y REDES SOCIALES 
+
+
+.social-media {
+    a {
+        color: #333;
+        font-size: 24px;
+        transition: color 0.3s ease, transform 0.3s ease;
+        display: inline-block;
+        margin: 0 10px;
+
+        &:hover {
+            color: #ffc107;
+            text-decoration: none;
+            transform: scale(1.2);
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "proyectocoderhousefedebasso-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch assets/scss/main.scss:assets/css/style.css --style=expanded",
+    "build": "sass assets/scss/main.scss assets/css/style.css --style=expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedebasso/proyectocoderhousefedebasso.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fedebasso/proyectocoderhousefedebasso/issues"
+  },
+  "homepage": "https://github.com/fedebasso/proyectocoderhousefedebasso#readme",
+  "devDependencies": {
+    "sass": "^1.91.0"
+  }
+}

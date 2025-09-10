@@ -1,0 +1,27 @@
+// ===================================
+// RESPONSIVE DESIGN - LIMPIO
+// ===================================
+
+// Responsive para filtros
+@media (max-width: 768px) {
+    .filtros-busqueda {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filtros-busqueda {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
+
+// Responsive para navbar móvil
+@media (max-width: 932px) {
+    .headercontenedor {
+        .navbar-nav {
+            text-align: center;
+        }
+    }
+}

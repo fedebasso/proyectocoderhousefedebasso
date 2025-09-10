@@ -1,0 +1,41 @@
+
+// SECCIÓN HERO - LIMPIO Y FUNCIONAL
+
+
+.fondoimagen {
+    background-image: url('../img/imagenfondo.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.hero {
+    .container {
+        padding: 50px;
+        font-size: 45px;
+        color: white;
+    }
+
+    .nav-item {
+        margin: 5px 10px;
+    }
+
+    nav-link {
+        &:hover {
+            color: #f0f0f0;
+            background-color: #555;
+        }
+    }
+}
+
+.container {
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}

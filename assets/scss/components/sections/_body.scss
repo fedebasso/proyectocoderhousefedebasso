@@ -1,0 +1,110 @@
+
+// CONTENIDO PRINCIPAL Y CARDS - LIMPIO
+
+.imagenes-destacadas {
+    .card-img-top {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+        transition: transform 0.3s ease;
+        
+    }
+
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #fff;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        
+        .card-title {
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #222;
+            font-size: 1.25rem;
+        }
+        
+        .card-text {
+            flex-grow: 1;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            margin-top: auto;
+            
+            &:hover {
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
+
+.servicios-destacados {
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+        border: none;
+        border-radius: 8px;
+        background: #fff;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+.equipo {
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+.filtros-busqueda {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    
+    
+    .btn {
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+        }
+        
+        &.active {
+            background-color: #ffc107;
+            border-color: #ffc107;
+            color: #000;
+        }
+    }
+}
