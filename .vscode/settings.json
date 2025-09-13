@@ -1,4 +1,20 @@
 {
-    "liveServer.settings.port": 5502,
-    "liveServer.settings.multiRootWorkspaceName": "clase 1 coder"
+  "liveServer.settings.port": 5502,
+  "liveServer.settings.multiRootWorkspaceName": "clase 1 coder",
+
+  "liveSassCompile.settings.rootIsWorkspace": true,
+  "liveSassCompile.settings.forceBaseDirectory": "/assets/scss",
+  "liveSassCompile.settings.includeItems": [
+    "/assets/scss/style.scss"
+  ],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/assets/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.watchOnLaunch": true,
+  "liveSassCompile.settings.compileOnWatch": true
 }

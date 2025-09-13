@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sass --watch assets/scss/main.scss:assets/css/style.css --style=expanded",
-    "build": "sass assets/scss/main.scss assets/css/style.css --style=expanded"
+    "start": "sass --watch assets/scss/style.scss:assets/css/style.css --style=expanded",
+    "build": "sass assets/scss/style.scss assets/css/style.css --style=expanded"
   },
   "repository": {
     "type": "git",
