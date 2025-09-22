@@ -1,16 +1,18 @@
 
-// SECCIÓN HERO - LIMPIO Y FUNCIONAL
+// SECCIÓN HERO 
 
 
 .fondoimagen {
     background-image: url('../img/imagenfondo.png');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 600px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
     align-items: center;
+    gap: 16px;
+    text-align: center;
     margin-bottom: 30px;
     border-radius: 10px;
 }
@@ -37,5 +39,49 @@
 .container {
     font-size: 20px;
     margin-bottom: 20px;
-    
+}
+
+
+.hero {
+  h1 {
+    font-size: 55px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+    color: #f8f9fa;
+    text-align: center;
+    text-shadow: none;
+    margin-bottom: 30px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    .btn {
+      padding: 15px 30px;
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        background: #ffb300;
+        border-color: #ffb300;
+        color: #333;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(255, 179, 0, 0.4);
+      }
+    }
+  }
 }

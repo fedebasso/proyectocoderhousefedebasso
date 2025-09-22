@@ -39,159 +39,240 @@
         </nav>
     </header>
 
-    <main class="container-fluid">
-        <section class="py-5">
+  <main>
+        <section class="propiedades-page">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center mb-5">
                         <h1 class="display-4">Nuestras Propiedades</h1>
-                        <p class="lead">Explora nuestras propiedades destacadas.</p>
+                        <p class="lead">Descubre el hogar perfecto entre nuestra amplia selección de propiedades exclusivas</p>
                     </div>
                 </div>
-                <!-- Filtros de búsqueda -->
-                <div class="row mb-4">
-                    <div class="col-12 text-center">
-                        <div class="filtros-busqueda">
-                            <a href="#" class="btn btn-outline-warning">Todos</a>
-                            <a href="#" class="btn btn-outline-warning">Casas</a>
-                            <a href="#" class="btn btn-outline-warning">Apartamentos</a>
-                            <a href="#" class="btn btn-outline-warning">Villas</a>
+
+                <div class="row filter-buttons">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center gap-2 flex-wrap">
+                            <a href="#" class="btn btn-outline-warning active" data-filter="todos">
+                                <i class="fas fa-th-large me-2"></i>Todos
+                            </a>
+                            <a href="#" class="btn btn-outline-warning" data-filter="casas">
+                                <i class="fas fa-home me-2"></i>Casas
+                            </a>
+                            <a href="#" class="btn btn-outline-warning" data-filter="apartamentos">
+                                <i class="fas fa-building me-2"></i>Apartamentos
+                            </a>
+                            <a href="#" class="btn btn-outline-warning" data-filter="villas">
+                                <i class="fas fa-crown me-2"></i>Villas
+                            </a>
                         </div>
                     </div>
                 </div>
-                <!--propiedades disponibles-->
-                <div class="imagenes-destacadas">
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card h-100 shadow animate__animated animate__pulse">
-                                <img src="assets/img/casa1.png" class="card-img-top" alt="propiedad 1"
-                                    style="height: 250px; object-fit: cover;">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Casa en venta</h5>
-                                    <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
-                                    <div class="d-flex justify-content-between align-items-center mt-auto">
-                                        <a href="#" class="btn btn-outline-warning">Ver detalles</a>
-                                        <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
-                                    </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow  animate__animated animate__pulse">
+                            <div class="position-relative">
+                                <img src="assets/img/casa1.png" class="card-img-top" alt="Casa en venta" style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-success fs-6">En Venta</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card h-100 shadow animate__animated animate__pulse">
-                                <img src="assets/img/apartamento1.png" class="card-img-top" alt="propiedad 2"
-                                    style="height: 250px; object-fit: cover;">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Apartamento en alquiler</h5>
-                                    <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
-                                    <div class="d-flex justify-content-between align-items-center mt-auto">
-                                        <a href="#" class="btn btn-outline-warning">Ver detalles</a>
-                                        <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card h-100 shadow animate__animated animate__pulse">
-                                <img src="assets/img/villa 1.png" class="card-img-top" alt="propiedad 3"
-                                    style="height: 250px; object-fit: cover;">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Villa en venta</h5>
-                                    <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
-                                    <div class="d-flex justify-content-between align-items-center mt-auto">
-                                        <a href="#" class="btn btn-outline-warning">Ver detalles</a>
-                                        <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card h-100 shadow animate__animated animate__pulse">
-                                <img src="assets/img/casadecampo1.png" class="card-img-top" alt="propiedad 4"
-                                    style="height: 250px; object-fit: cover;">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Casa de campo</h5>
-                                    <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
-                                    <div class="d-flex justify-content-between align-items-center mt-auto">
-                                        <a href="#" class="btn btn-outline-warning">Ver detalles</a>
-                                        <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card h-100 shadow animate__animated animate__pulse">
-                                <img src="assets/img/apartamento2.png" class="card-img-top" alt="propiedad 5"
-                                    style="height: 250px; object-fit: cover;">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Apartamento moderno</h5>
-                                    <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
-                                    <div class="d-flex justify-content-between align-items-center mt-auto">
-                                        <a href="#" class="btn btn-outline-warning">Ver detalles</a>
-                                        <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="card h-100 shadow animate__animated animate__pulse">
-                                <img src="assets/img/villa2.png" class="card-img-top" alt="propiedad 6"
-                                    style="height: 250px; object-fit: cover;">
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">Villa de lujo</h5>
-                                    <p class="card-text flex-grow-1">Descripción de la propiedad.</p>
-                                    <div class="d-flex justify-content-between align-items-center mt-auto">
-                                        <a href="#" class="btn btn-outline-warning">Ver detalles</a>
-                                        <a href="#" class="text-warning fs-4"><i class="fas fa-phone"></i></a>
-                                    </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Casa Moderna Familiar</h5>
+                                <p class="card-text flex-grow-1">
+                                    <i class="fas fa-map-marker-alt text-warning me-2"></i>Montevideo, Centro<br>
+                                    <i class="fas fa-bed text-warning me-2"></i>3 dormitorios
+                                    <i class="fas fa-bath text-warning me-2 ms-3"></i>2 baños<br>
+                                    <small class="text-muted">Hermosa casa con jardín y garage</small>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-warning mb-0">$250.000</span>
+                                    <a href="#" class="btn btn-outline-warning mt-auto">
+                                        <i class="fas fa-eye me-1"></i>Ver detalles
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="row mt-5">
-                        <div class="col-12 text-center">
-                            <p class="lead">¿No encontraste lo que buscas?</p>
-                            <a href="contacto.html" class="btn btn-outline-warning  btn-lg">Contactar agente</a>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow  animate__animated animate__pulse">
+                            <div class="position-relative">
+                                <img src="assets/img/apartamento1.png" class="card-img-top" alt="Apartamento en alquiler" style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-primary fs-6">Alquiler</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Apartamento Moderno</h5>
+                                <p class="card-text flex-grow-1">
+                                    <i class="fas fa-map-marker-alt text-warning me-2"></i>Montevideo, Pocitos<br>
+                                    <i class="fas fa-bed text-warning me-2"></i>2 dormitorios
+                                    <i class="fas fa-bath text-warning me-2 ms-3"></i>1 baño<br>
+                                    <small class="text-muted">Apartamento con vista al mar</small>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-warning mb-0">$1.200/mes</span>
+                                    <a href="#" class="btn btn-outline-warning mt-auto">
+                                        <i class="fas fa-eye me-1"></i>Ver detalles
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow  animate__animated animate__pulse">
+                            <div class="position-relative">
+                                <img src="assets/img/villa 1.png" class="card-img-top" alt="Villa en venta" style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-warning text-dark fs-6">Premium</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Villa de Lujo</h5>
+                                <p class="card-text flex-grow-1">
+                                    <i class="fas fa-map-marker-alt text-warning me-2"></i>Montevideo, Carrasco<br>
+                                    <i class="fas fa-bed text-warning me-2"></i>4 dormitorios
+                                    <i class="fas fa-bath text-warning me-2 ms-3"></i>3 baños<br>
+                                    <small class="text-muted">Villa con piscina y amplio jardín</small>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-warning mb-0">$450.000</span>
+                                    <a href="#" class="btn btn-outline-warning mt-auto">
+                                        <i class="fas fa-eye me-1"></i>Ver detalles
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow  animate__animated animate__pulse">
+                            <div class="position-relative">
+                                <img src="assets/img/casadecampo1.png" class="card-img-top" alt="Casa de campo" style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-success fs-6">En Venta</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Casa de Campo</h5>
+                                <p class="card-text flex-grow-1">
+                                    <i class="fas fa-map-marker-alt text-warning me-2"></i>Canelones, Rural<br>
+                                    <i class="fas fa-bed text-warning me-2"></i>3 dormitorios
+                                    <i class="fas fa-bath text-warning me-2 ms-3"></i>2 baños<br>
+                                    <small class="text-muted">Casa rústica con amplio terreno</small>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-warning mb-0">$180.000</span>
+                                    <a href="#" class="btn btn-outline-warning mt-auto">
+                                        <i class="fas fa-eye me-1"></i>Ver detalles
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow  animate__animated animate__pulse">
+                            <div class="position-relative">
+                                <img src="assets/img/apartamento2.png" class="card-img-top" alt="Apartamento moderno" style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-primary fs-6">Alquiler</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Apartamento Moderno</h5>
+                                <p class="card-text flex-grow-1">
+                                    <i class="fas fa-map-marker-alt text-warning me-2"></i>Montevideo, Punta Carretas<br>
+                                    <i class="fas fa-bed text-warning me-2"></i>1 dormitorio
+                                    <i class="fas fa-bath text-warning me-2 ms-3"></i>1 baño<br>
+                                    <small class="text-muted">Moderno apartamento con balcón</small>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-warning mb-0">$900/mes</span>
+                                    <a href="#" class="btn btn-outline-warning mt-auto">
+                                        <i class="fas fa-eye me-1"></i>Ver detalles
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow  animate__animated animate__pulse">
+                            <div class="position-relative">
+                                <img src="assets/img/villa2.png" class="card-img-top" alt="Villa de lujo" style="height: 250px; object-fit: cover;">
+                                <div class="position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-warning text-dark fs-6">Premium</span>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Villa Exclusiva</h5>
+                                <p class="card-text flex-grow-1">
+                                    <i class="fas fa-map-marker-alt text-warning me-2"></i>Montevideo, Carrasco Norte<br>
+                                    <i class="fas fa-bed text-warning me-2"></i>5 dormitorios
+                                    <i class="fas fa-bath text-warning me-2 ms-3"></i>4 baños<br>
+                                    <small class="text-muted">Villa de lujo con todas las comodidades</small>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 text-warning mb-0">$650.000</span>
+                                    <a href="#" class="btn btn-outline-warning mt-auto">
+                                        <i class="fas fa-eye me-1"></i>Ver detalles
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cta-section text-center">
+                            <div class="container">
+                                <p class="lead">¿No encontraste la propiedad ideal?</p>
+                                <p class="mb-4">Nuestro equipo de expertos está aquí para ayudarte a encontrar exactamente lo que buscas</p>
+                                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                                    <a href="contacto.html" class="btn btn-lg">
+                                        <i class="fas fa-phone me-2"></i>Contactar Agente
+                                    </a>
+                                    <a href="servicios.html" class="btn btn-lg">
+                                        <i class="fas fa-concierge-bell me-2"></i>Nuestros Servicios
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <!-- footer-->
+    
     <footer class="bg-warning text-white py-5 mt-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-6 col-md-12">
                     <h4 class="fw-bold">InmobiliariaFB</h4>
-                    <p>Más de 15 años de experiencia ayudando a familias a encontrar su hogar ideal. Especialistas en
-                        compra, venta y alquiler de propiedades.</p>
+                    <p>Más de 15 años de experiencia ayudando a familias a encontrar su hogar ideal. Especialistas en compra, venta y alquiler de propiedades.</p>
                 </div>
-
-
+                
                 <div class="col-lg-2 col-md-4">
                     <h5>Contacto</h5>
-                    <p class="mb-1">Dir: Bv artigas 1234, Centro<br>Montevideo</p>
+                    <p class="mb-1">Bv artigas 1234, Centro<br>Montevideo</p>
                     <p class="mb-1">Tel: 123455</p>
-                    <p class="mb-1">mail:info@inmobiliariaFB.com</p>
+                    <p>info@inmobiliariaFB.com</p>
                 </div>
-
+                
                 <div class="col-lg-2 col-md-4">
                     <h5>Servicios</h5>
                     <ul class="list-unstyled">
-                        <li><a href="servicios.html" class="text-white text-decoration-none">Venta de Propiedades</a>
-                        </li>
+                        <li><a href="servicios.html" class="text-white text-decoration-none">Venta de Propiedades</a></li>
                         <li><a href="servicios.html" class="text-white text-decoration-none">Alquileres</a></li>
                         <li><a href="servicios.html" class="text-white text-decoration-none">Tasaciones</a></li>
                         <li><a href="servicios.html" class="text-white text-decoration-none">Asesoría Legal</a></li>
                     </ul>
                 </div>
-
+                
                 <div class="col-lg-2 col-md-4">
                     <h5>Enlaces</h5>
                     <ul class="list-unstyled">
@@ -201,21 +282,14 @@
                     </ul>
                 </div>
             </div>
-
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="social-media d-flex justify-content-center gap-5 mt-4 ">
-                        <a href="https://www.facebook.com" target="_blank" class="text-white fs-1"><i
-                                class="fab fa-facebook"></i></a>
-                        <a href="https://www.twitter.com" target="_blank" class="text-white fs-1"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com" target="_blank" class="text-white fs-1"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://www.whatsapp.com" target="_blank" class="text-white fs-1"><i
-                                class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
+            
+            <hr class="my-4">
+            
+            <div class="social-media d-flex justify-content-center gap-3">
+                <a href="https://www.facebook.com" target="_blank" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank" class="text-white fs-4"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.whatsapp.com" target="_blank" class="text-white fs-4"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </footer>

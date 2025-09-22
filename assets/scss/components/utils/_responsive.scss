@@ -25,3 +25,37 @@
         }
     }
 }
+
+// Ajustes responsive migrados desde CSS
+@media (max-width: 768px) {
+  .hero {
+    h1 { font-size: 2.5rem; }
+    .subtitulo { font-size: 1.2rem; }
+  }
+
+  .fondoimagen { padding: 40px 20px; margin: 20px; }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn {
+      width: 100%;
+      max-width: 250px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .propiedades-page {
+    padding: 40px 0;
+
+    h1 { font-size: 2.5rem; }
+  }
+
+  .filter-buttons {
+    .btn { width: 100%; margin: 5px 0; }
+  }
+
+  .cta-section { margin: 40px 15px; padding: 40px 20px; }
+}
