@@ -1,3 +1,13 @@
+// Footer responsive tweaks
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+    .list-unstyled { padding-left: 0; }
+    .social-media { gap: 16px; }
+    .footer-bottom { font-size: 0.9rem; opacity: 1; }
+  }
+}
+
 // ===================================
 // RESPONSIVE DESIGN - LIMPIO
 // ===================================

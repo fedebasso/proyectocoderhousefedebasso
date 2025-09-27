@@ -1,18 +1,87 @@
+// FOOTER STYLES
+footer {
+    background: linear-gradient(180deg, #ffc107, #ffb300);
+    color: #fff;
+    position: relative;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.08);
 
-// FOOTER Y REDES SOCIALES 
+    h4,
+    h5 {
+        font-weight: 700;
+        margin-bottom: 16px;
+        position: relative;
 
-.social-media {
-    a {
-        color: #333;
-        font-size: 24px;
-        transition: color 0.3s ease, transform 0.3s ease;
-        display: inline-block;
-        margin: 0 10px;
-
-        &:hover {
-            color: #ffc107;
-            text-decoration: none;
-            transform: scale(1.2);
+        &::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #fff;
+            border-radius: 2px;
+            margin-top: 6px;
+            opacity: 0.9;
         }
     }
+
+    p,
+    li,
+    a {
+        color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        opacity: 0.9;
+        transition: color 0.3s ease, opacity 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+
+        &:hover {
+            opacity: 1;
+            color: #333;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.55);
+        }
+    }
+
+    .list-unstyled li {
+        margin-bottom: 8px;
+    }
+}
+
+// FOOTER Y REDES SOCIALES
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    a {
+        width: 44px;
+        height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #fff;
+        border: 2px solid rgba(255, 255, 255, 0.75);
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+
+        &:hover {
+            background: #fff;
+            color: #333;
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+            border-color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  padding-top: 12px;
+  margin-top: 16px;
+  font-size: 0.95rem;
+  opacity: 0.95;
+  text-align: center;
 }

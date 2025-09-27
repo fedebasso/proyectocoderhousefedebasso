@@ -1,6 +1,16 @@
 
 // CONTENIDO PRINCIPAL Y CARDS - LIMPIO
 
+// Interacción global para todas las cards (mismo efecto que en index)
+.card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
 .imagenes-destacadas {
     .card-img-top {
         width: 100%;
@@ -20,8 +30,8 @@
         background: #fff;
 
         &:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2) !important;
         }
     }
 
@@ -53,7 +63,8 @@
         }
     }
 }
- //servicios y equipo 
+
+ //servicios y equipo
 .servicios-destacados {
     .card {
         transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
@@ -62,25 +73,37 @@
         background: #fff;
 
         &:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2) !important;
         }
     }
 }
 
 .equipo {
-    .card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-        border: none;
-        border-radius: 8px;
-        overflow: hidden;
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
 
-        &:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
+    &:hover {
+      transform: translateY(-15px) scale(1.02);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2) !important;
     }
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .card-img-top {
+    display: block;
+    margin: 0 auto 1rem;
+  }
 }
+
+
 
 .filtros-busqueda {
     display: grid;
@@ -110,7 +133,7 @@
     }
 }
 
-// PROPIEDADES DESTACADAS 
+// PROPIEDADES DESTACADAS
 .propiedades-destacadas {
   padding: 80px 0;
 
@@ -143,15 +166,14 @@
     border: none;
     border-radius: 15px;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
     background: #fff;
 
     &:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+      transform: translateY(-15px) scale(1.02);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2) !important;
     }
 
-    &-img-top { transition: transform 0.3s ease; }
     &-body { padding: 25px; }
     &-title { color: #333; font-weight: 600; font-size: 1.3rem; margin-bottom: 15px; }
     &-text { color: #666; }
@@ -173,7 +195,7 @@
   }
 }
 
-// CTA SECTION 
+// CTA SECTION
 .cta-section {
   padding: 50px 0;
   margin-top: 60px;
@@ -271,7 +293,7 @@
 
       &::before { opacity: 1; }
 
-      .card-img-top { transform: scale(1.08); }
+      // Imagen se mantiene sin zoom para unificar efecto con index
     }
 
     &-img-top { transition: transform 0.4s ease; position: relative; z-index: 2; }
@@ -328,7 +350,7 @@
   }
 }
 
-// SERVICIOS PAGE 
+// SERVICIOS PAGE
 .servicios-page {
   background: linear-gradient(to bottom, #f8f9fa, #ffffff);
   min-height: calc(100vh - 200px);
@@ -382,5 +404,91 @@
     &-body { padding: 25px; position: relative; }
     &-title { color: #333; font-weight: 600; font-size: 1.3rem; margin-bottom: 15px; transition: color 0.3s ease; }
     &-text { color: #666; font-size: 1rem; line-height: 1.6; }
+  }
+}
+
+
+// NOSOTROS PAGE (estilo unificado con Servicios/Propiedades)
+.nosotros-page {
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  min-height: calc(100vh - 200px);
+  padding: 60px 0;
+
+  h1 {
+    font-weight: 700;
+    color: #333;
+    margin: 40px 0;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px; height: 4px;
+      background: linear-gradient(90deg, #ffc107, #ffb300);
+      border-radius: 2px;
+    }
+  }
+
+  .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: #fff;
+    position: relative;
+    margin-bottom: 30px;
+
+    &:hover {
+      transform: translateY(-15px) scale(1.02);
+      box-shadow: 0 25px 50px rgba(0,0,0,.2) !important;
+    }
+
+    &-body { padding: 25px; position: relative; }
+    &-title { color: #333; font-weight: 600; font-size: 1.3rem; margin-bottom: 12px; }
+    &-text { color: #666; font-size: 1rem; line-height: 1.6; }
+  }
+}
+
+// CONTACTO PAGE (estilo unificado con Servicios/Propiedades)
+.contacto-page {
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  min-height: calc(100vh - 200px);
+  padding: 60px 0;
+
+  h1 {
+    font-weight: 700;
+    color: #333;
+    margin: 40px 0;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px; height: 4px;
+      background: linear-gradient(90deg, #ffc107, #ffb300);
+      border-radius: 2px;
+    }
+  }
+
+  .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: #fff;
+    position: relative;
+    margin-bottom: 30px;
+
+    &:hover {
+      transform: translateY(-15px) scale(1.02);
+      box-shadow: 0 25px 50px rgba(0,0,0,.2) !important;
+    }
+
+    &-body { padding: 25px; }
+    &-title { color: #333; font-weight: 600; font-size: 1.2rem; }
   }
 }
