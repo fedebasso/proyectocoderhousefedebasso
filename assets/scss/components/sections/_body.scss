@@ -195,6 +195,50 @@
   }
 }
 
+// Botón outline warning unificado (estilo Contactar Agente)
+.btn-outline-warning {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+    pointer-events: none;
+  }
+
+  &:hover::before { left: 100%; }
+
+  &:hover {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
+  }
+}
+
+// Asegurar estilo en CTA sections
+.cta-section {
+  .btn-outline-warning {
+    background: transparent;
+    border: 2px solid #ffc107;
+  }
+}
+
+
 // CTA SECTION
 .cta-section {
   padding: 50px 0;
@@ -218,25 +262,6 @@
     margin-bottom: 25px;
   }
 
-  .btn {
-    background: #fff;
-    color: #333;
-    border: none;
-    padding: 15px 40px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    position: relative;
-
-    &:hover {
-      background: #ffc107;
-      color: #333;
-      transform: translateY(-3px);
-      box-shadow: 0 12px 35px rgba(255, 193, 7, 0.4);
-      border: 2px solid #ffb300;
-    }
-  }
 }
 
 // PROPIEDADES PAGe
@@ -408,7 +433,7 @@
 }
 
 
-// NOSOTROS PAGE (estilo unificado con Servicios/Propiedades)
+// NOSOTROS PAGE
 .nosotros-page {
   background: linear-gradient(to bottom, #f8f9fa, #ffffff);
   min-height: calc(100vh - 200px);
