@@ -1,7 +1,6 @@
 
 // CONTENIDO PRINCIPAL Y CARDS - LIMPIO
 
-// Interacción global para todas las cards (mismo efecto que en index)
 .card {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -195,7 +194,6 @@
   }
 }
 
-// Botón outline warning unificado (estilo Contactar Agente)
 .btn-outline-warning {
   display: inline-flex;
   align-items: center;
@@ -230,7 +228,7 @@
   }
 }
 
-// Asegurar estilo en CTA sections
+
 .cta-section {
   .btn-outline-warning {
     background: transparent;
@@ -476,7 +474,7 @@
   }
 }
 
-// CONTACTO PAGE (estilo unificado con Servicios/Propiedades)
+// CONTACTO PAGE 
 .contacto-page {
   background: linear-gradient(to bottom, #f8f9fa, #ffffff);
   min-height: calc(100vh - 200px);
